@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: rgb(14, 14, 14);
+  padding: 3rem 0;
+}
+.heading h1 {
+  color: #1380fc;
+  font-size: 3rem;
+  position: relative;
+}
+.heading h1:before {
+  content: "";
+  width: 50%;
+  height: 0.2rem;
+  background-color: #1380fc;
+  position: absolute;
+  top: 40%;
+  right: 105%;
+}
+.heading h1:after {
+  content: "";
+  width: 50%;
+  height: 0.2rem;
+  background-color: #1380fc;
+  position: absolute;
+  top: 40%;
+  left: 105%;
+}
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin-top: 1rem;
+  width: 85vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+@media (max-width: 696px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 465px) {
+  .heading h1 {
+    font-size: 1.6rem;
+  }
+}
